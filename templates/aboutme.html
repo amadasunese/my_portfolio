@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #0a1930;
+        color: #ffffff;
+    }
+    h2, h3, h5, p {
+        color: #ffffff;
+    }
+    .skill-icon {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: block;
+        /* margin: 0 auto 10px; */
+    }
+    .skill-item {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .card {
+        background-color: #2c2c2c;
+        border: none;
+    }
+    .card-title, .card-text {
+        color: #ffffff;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+</style>
+<section id="about" class="container mt-4">
+    <h5 class="about-title">About Me</h5>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{ url_for('static', filename='images/ese.jpg') }}" alt="Profile Photo" style="height: auto; margin-right: 20px; margin-bottom: 20px; float: left;" class="img-thumbnail image-hover-effect" width="500">
+            <p>
+                I am a tech enthusiast with specialties in data analysis, software engineering, Python programming, Javascript, HTML , CSS , and WordPress, combined with good teamwork, effective communication, and good leadership skills.
+            </p>
+            <p>
+                I am a dedicated and focused professional with attention to detail. I excel in managing multiple tasks under pressure, and my self-motivation drives my success in overseeing several large-scale projects in the area of youth empowerment, HIV/AIDS, Human Trafficking, Gender, OVC, Sexual and Reproductive Health and Rights issues, etc..
+            </p>
+            <p>
+                My skills extend to formative research, report writing, data collection, and analysis, and I am proficient in various computer applications and programming, including Microsoft Office, Excel, PowerBi, and web design. I have a keen eye for data analysis and management, and my organizational skills are exceptional. My ability to communicate effectively, both verbally and in writing, adds value to the projects I undertake.
+            </p>
+            <p>
+                You can explore my profile to see my completed and ongoing projects both in tech and project management related and feel free to get in touch.
+            </p>
+            <!-- Add more content about yourself as needed -->
+        </div>
+        
+    </div>
+</section>
+
+ <!-- Skill Sets Section -->
+<!-- Skill Sets Section -->
+<section id="skills" class="container mt-4" data-aos="fade-down-right">
+    <h5 class="skill-title text-center">Skill Sets</h5>
+    <div class="row">
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up">
+            <img src="static/images/html5-icon-1.png" alt="HTML" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">HTML</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="100">
+            <img src="static/images/css.png" alt="CSS" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">CSS</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="200">
+            <img src="static/images/git-logo.png" alt="Git" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Git</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="300">
+            <img src="static/images/python.png" alt="Python" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Python</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="/static/images/flask4.png" alt="Flask" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Flask</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="500">
+            <img src="/static/images/exel5.png" alt="Excel" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Excel</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="/static/images/powerbi1.png" alt="PowerBI" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">PowerBI</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="700">
+            <img src="/static/images/wordpress1.png" alt="Wordpress" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Wordpress</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+

@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #0a1930;
+        color: #ffffff;
+    }
+
+    h2,
+    h3,
+    h5,
+    p {
+        color: #ffffff;
+    }
+
+    .skill-icon {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: block;
+        /* margin: 0 auto 10px; */
+    }
+
+    .skill-item {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #2c2c2c;
+        border: none;
+    }
+
+    .card-title,
+    .card-text {
+        color: #ffffff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+</style>
+
+<div class="container mt-4">
+    <!-- About Section -->
+    <div class="row">
+        <div class="col-md-6">
+            <section id="about" class="scroll-animation" data-aos="fade-up">
+                <h5 class="about-title">About Me</h5>
+                <div>
+                    <img src="static/images/ese.jpg" alt="Profile Photo"
+                        style="width: 200px; height: auto; margin-right: 20px; float: left;">
+                    <p>Hello! I'm Ese Amadasun, an experienced professional specializing in project design, management,
+                        monitoring, and evaluation. I excel in deploying effective monitoring systems and enhancing
+                        decision-making through advanced data analysis. My expertise encompasses both qualitative and
+                        quantitative data collection, comprehensive reporting, and teamwork.</p>
+                    <p>Technically, I am proficient in full stack development and programming with Python, JavaScript,
+                        HTML, CSS, and I am skilled in using data analytics tools like Tableau, Power BI, and Google Data
+                        Studio. These competencies support my roles in data analysis, web development, and software
+                        engineering.</p>
+                    <div style="clear: both;"></div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6" data-aos="fade-up">
+            <div class="card mb-6">
+                <h5 class="card-title">On-going project: Cooperative Management</h5>
+                <img src="/static/images/cooperative2.png" class="card-img-top image-hover-effect" alt="Project 1 Image">
+                <p class="caption">Python | Flask | HTML | CSS | JavaScript</p>
+                <div class="card-body">
+                    <p class="card-text">The Cooperative Society Web Application is designed to support the operations of
+                        a cooperative society to management membership and savings effectively.</p>
+                    <a href="https://xyzcooperative.pythonanywhere.com/" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Skill Sets Section -->
+<section id="skills" class="container mt-4" data-aos="fade-down-right">
+    <h5 class="skill-title">Skill Sets</h5>
+    <div class="row">
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="50">
+            <img src="static/images/html5-icon-1.png" alt="HTML" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">HTML</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="100">
+            <img src="static/images/css.png" alt="CSS" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">CSS</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="200">
+            <img src="static/images/git-logo.png" alt="Git" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Git</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="300">
+            <img src="static/images/python.png" alt="Python" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Python</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="/static/images/flask4.png" alt="Flask" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Flask</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="500">
+            <img src="/static/images/exel5.png" alt="Excel" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Excel</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="/static/images/powerbi1.png" alt="PowerBI" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">PowerBI</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 skill-item mb-3" data-aos="fade-up" data-aos-delay="700">
+            <img src="/static/images/wordpress1.png" alt="Wordpress" class="img-fluid skill-icon mx-auto d-block">
+            <p class="text-center">Wordpress</p>
+        </div>
+    </div>
+</section>
+
+
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-4 scroll-animation" data-aos="fade-down-right">
+        <h5 class="project-title">Projects</h5>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card mb-4 image-hover-effect">
+                    <h5 class="card-title">Cooperative Management</h5>
+                    <img src="/static/images/cooperative.png" class="card-img-top image-hover-effect"
+                        alt="Project 1 Image">
+                    <p class="caption">Python | Flask | HTML | CSS | JavaScript</p>
+                    <div class="card-body">
+                        <p class="card-text">The Cooperative Society Web Application is designed to support the
+                            operations of a cooperative society to management membership and savings effectively.</p>
+                        <a href="#" class="btn btn-primary">Visit the Page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card mb-4 image-hover-effect">
+                    <h5 class="card-title">Osusu Contribution</h5>
+                    <img src="/static/images/osusu.png" class="card-img-top image-hover-effect" alt="Project 2 Image">
+                    <p class="caption">Python | Flask | HTML | CSS | JavaScript</p>
+                    <div class="card-body">
+                        <p class="card-text">Osusu Application is a platform designed to facilitate the management of
+                            rotating savings and credit associations (ROSCA), commonly known as Osusu.</p>
+                        <a href="https://osusu.pythonanywhere.com/" class="btn btn-primary">Visit the Page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card mb-4 image-hover-effect">
+                    <h5 class="card-title">Home Income Management</h5>
+                    <img src="static/images/him.png" class="card-img-top image-hover-effect" alt="Project 3 Image">
+                    <p class="caption">Python | Flask | HTML | CSS | JavaScript</p>
+                    <div class="card-body">
+                        <p class="card-text">Income and expense tracker web app using Python and Flask. Track income,
+                            expenses, set budgets, and view financial summaries.</p>
+                        <a href="https://homeincomemanager.pythonanywhere.com/" class="btn btn-primary">Visit the Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="projects" class="btn btn-lg btn-secondary">See More Projects</a>
+        </div>
+    </section>
+</div>
+
+<!-- Include AOS library CSS and JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        easing: 'ease-in-out',
+        once: false,
+        mirror: false
+    });
+</script>
+{% endblock %}
