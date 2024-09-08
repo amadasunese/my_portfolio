@@ -28,3 +28,26 @@
         });
     });
 </script> */}
+
+
+const contactForm = document.getElementById('contact-form');
+const messageResponse = document.getElementById('message-response');
+
+contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    fetch('/send-email', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        messageResponse.textContent = data.message;
+    })
+    .catch(error => {
+        console.error('Error sending email:', error);
+        messageResponse.textContent = 'An error occurred while sending your message. Please try again later.';
+    });
+});
