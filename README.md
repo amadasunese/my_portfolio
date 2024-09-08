@@ -12,6 +12,6 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 - **AOS (Animate On Scroll)**: For scroll animations to enhance visual appeal.
 
 Click on the link below to view my portfolio projects
-https://stupendous-pixie-9452c0.netlify.app/
+https://esetechub.netlify.app/
 
 
