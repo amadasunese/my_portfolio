@@ -5,46 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ese Amadasun || Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Ese Amadasun Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html #about-me">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html #interests">Interests</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resume.pdf">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html #projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="public/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <header> 
+        <nav class="navbar">
+            <div class="logo">EseTechHub | Portfolio</div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#interests">Interests</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search the Website">
             </div>
         </nav>
     </header>
+
     <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="text-center">📬 Contact Me</h2>
+        <div class="container-contact">
+            <h2 class="text-center">Contact Me</h2>
             <p class="text-center">Feel free to reach out to me by filling the form below:</p>
 
             <form action="/send-email" method="POST" class="contact-form">
@@ -64,10 +55,20 @@
             </form>
         </div>
     </section>
+    
 
-     <!--Footer section -->
-     <footer>
-        <p>&copy; 2024 Ese Amadasun. All rights reserved.</p>
-    </footer>
+     <!-- Footer section-->
+<footer>
+    <div class="footer-content">
+        <p>© Ese Amadasun. All Rights Reserved.</p>
+        <p>Follow me on: 
+            <a href="https://github.com/amadasunese" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/amadasun-ese/" target="_blank">LinkedIn</a> |
+            <a href="https://twitter.com/amadasunese" target="_blank">Twitter</a> |
+            <a href="https://www.facebook.com/amadasunese" target="_blank">Facebook</a>
+        </p>
+    </div>
+</footer>
+
 </body>
 </html>
