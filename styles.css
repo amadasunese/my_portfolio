@@ -49,7 +49,7 @@ section {
 }
 
 .project-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #007BFF;
     margin-bottom: 1.2rem;
     text-align: center;
@@ -143,11 +143,6 @@ section {
     margin-bottom: 1rem;
 }
 
-.project-title {
-    color: #007BFF;
-    margin-top: 1rem;
-}
-
 .project-description {
     margin-top: 1rem;
     font-size: 1rem;
@@ -202,11 +197,6 @@ section {
 .caption {
     color: #007BFF;
     font-size: 0.875rem;
-}
-
-.card-text {
-    margin-top: 1rem;
-    font-size: 1rem;
 }
 
 .project-box .btn {
